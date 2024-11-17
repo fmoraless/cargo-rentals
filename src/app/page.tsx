@@ -1,11 +1,11 @@
+import { Landing } from "app/features/Landing";
 import styles from "./page.module.css";
 import { Button } from "@mantine/core";
 
 export default function Home() {
   return (
     <main>
-      <p>texto</p>
-      <Button className={styles.btn}>Click me</Button>
+      <Landing />
     </main>
   );
 }
