@@ -1,5 +1,5 @@
 import { Button, Container, Flex } from "@mantine/core";
-import { primaryGradient } from "app/const/inedx";
+import { primaryGradient } from "app/const/index";
 import React from "react";
 import classes from "./SearchEngine.module.css";
 import { SelectCountry } from "../SelectCountry";
@@ -19,18 +19,8 @@ export const SearchEngine = () => {
         <SelectCountry />
         <SelectRegion />
         <SelectCarMake />
-        <SelectDate
-          label="Fecha de Retiro"
-          value={new Date()}
-          onChange={() => {}}
-          minDate={new Date()}
-        />
-        <SelectDate
-          label="Fecha de Devolución"
-          value={new Date()}
-          onChange={() => {}}
-          minDate={new Date()}
-        />
+        <SelectDate label="Fecha Retiro" />
+        <SelectDate label="Fecha Devolución" />
 
         <Button variant="gradient" gradient={primaryGradient}>
           Search for car

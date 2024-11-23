@@ -3,9 +3,9 @@ import { DateInput, DateValue } from "@mantine/dates";
 
 interface Props {
   label?: ReactNode;
-  value: DateValue | Date;
-  onChange(value: DateValue | Date): void;
-  minDate: Date;
+  value?: DateValue | Date;
+  onChange?: (value: DateValue | Date) => void;
+  minDate?: Date;
 }
 export const SelectDate = ({ label, value, onChange, minDate }: Props) => {
   return (

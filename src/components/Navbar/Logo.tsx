@@ -1,5 +1,5 @@
 import { Text } from "@mantine/core";
-import { primaryGradient } from "app/const/inedx";
+import { primaryGradient } from "app/const/index";
 import Link from "next/link";
 import React from "react";
 

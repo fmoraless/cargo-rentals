@@ -1,7 +1,7 @@
 "use client";
 import { Button, Group } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
-import { primaryGradient } from "app/const/inedx";
+import { primaryGradient } from "app/const/index";
 import Link from "next/link";
 import React from "react";
 
