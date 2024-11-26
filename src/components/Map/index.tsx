@@ -9,7 +9,7 @@ const Map = () => {
     <Container className={classes.container}>
       <MapContainer
         className={classes.mapContainer}
-        center={[51.505, -0.09]}
+        center={[-38.73965, -72.59842]}
         zoom={14}
         scrollWheelZoom={false}
         style={{ height: "300px" }}
