@@ -20,9 +20,16 @@ export function Signup() {
   return (
     <>
       <Box px="md" py="xl">
-        <Paper className={classes.formPaper} withBorder>
+        <Paper maw="450px"
+        radius="sm"
+        w="100%"
+        p="xl"
+        my="xl"
+        mx="auto" 
+        className={classes.formPaper} 
+        withBorder>
           <Text size="lg" fw={500}>
-            Welcome to <Logo />
+          Bienvenido a <Logo />
           </Text>
           <GoogleButton />
           <Divider label="or continue with" labelPosition="center" my="md" />
@@ -49,7 +56,7 @@ export function Signup() {
               <Checkbox label="Accept terms and conditions" />
             </Stack>
 
-            <Group justify="apart" mt="xl">
+            <Group justify="space-between" mt="xl">
               <Anchor
                 component={Link}
                 href="/login"

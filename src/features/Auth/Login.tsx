@@ -56,7 +56,7 @@ export function Login(props: PaperProps) {
             />
           </Stack>
 
-          <Group justify="apart" mt="xl">
+          <Group justify="space-between" mt="xl">
             <Anchor
               component={Link}
               href="/signup"
