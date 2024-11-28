@@ -1,5 +1,9 @@
 import React from "react";
 
-export const Provider = () => {
-  return <div>Provider</div>;
+const Provider = () => {
+  return (
+    <div>
+      <h1>Provider</h1>
+    </div>
+  );
 };

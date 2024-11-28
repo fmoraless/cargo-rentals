@@ -1,5 +1,5 @@
 "use client";
-import { Drawer, Button, Burger, Box, Center } from "@mantine/core";
+import { Drawer, Burger, Center } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import React from "react";
 import { AuthButtons } from "./AuthButtons";

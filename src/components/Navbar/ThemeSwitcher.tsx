@@ -17,6 +17,7 @@ export const ThemeSwitcher = () => {
   return (
     <SegmentedControl
       value={colorScheme}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       onChange={(value) => setColorScheme(value as any)}
       data={[
         {
