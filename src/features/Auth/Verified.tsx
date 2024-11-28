@@ -1,3 +1,4 @@
+'use client';
 import { Alert, Button, Divider, Flex } from '@mantine/core'
 import { IconChecks } from '@tabler/icons-react'
 import Link from 'next/link'

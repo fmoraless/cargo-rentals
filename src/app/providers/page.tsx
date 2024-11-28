@@ -7,3 +7,5 @@ const Provider = () => {
     </div>
   );
 };
+
+export default Provider;
