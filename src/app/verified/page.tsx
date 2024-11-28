@@ -3,7 +3,7 @@ import { IconChecks } from "@tabler/icons-react";
 import Link from "next/link";
 import React from "react";
 
-export const Verified = () => {
+const Verified = () => {
   return (
     <Flex mih="300px" justify="center" align="center">
       <Alert
@@ -21,3 +21,4 @@ export const Verified = () => {
     </Flex>
   );
 };
+export default Verified;
