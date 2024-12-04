@@ -1,7 +1,7 @@
 "use client";
 // import { useAuthContext } from "app/context/UserSessionContext";
 // import { useSupabase } from "app/hooks/useLoginForm";
-import { Avatar, Flex, Menu, Text, UnstyledButton } from "@mantine/core";
+import { Avatar, Flex, Group, Menu, Text } from "@mantine/core";
 import { useUserSessionContext } from "app/context/UserSessionContext";
 import { logout } from "app/services/auth.service";
 import Link from "next/link";
@@ -40,16 +40,10 @@ export function ProfileMenu() {
   return (
     <Menu shadow="md" width={200}>
       <Menu.Target>
-        <UnstyledButton
-          component={Flex}
-          align="center"
-          gap={8}
-          variant="subtle"
-          py="sm"
-        >
+        <Group component={Flex} align="center" gap={8} variant="subtle" py="sm">
           <Avatar src={avatar} radius="xl" />
           <IoChevronDown />
-        </UnstyledButton>
+        </Group>
       </Menu.Target>
       <Menu.Dropdown>
         <Menu.Label>
