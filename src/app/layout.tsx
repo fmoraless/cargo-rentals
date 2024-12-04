@@ -7,6 +7,7 @@ import "@mantine/carousel/styles.css";
 import "@mantine/dates/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { Navbar } from "app/components/Navbar";
+import { UserSessionContextProvider } from "app/context/UserSessionContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,8 +37,10 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <MantineProvider>
-          <Navbar />
-          {children}
+          <UserSessionContextProvider>
+            <Navbar />
+            {children}
+          </UserSessionContextProvider>
         </MantineProvider>
       </body>
     </html>
