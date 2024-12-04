@@ -1,24 +1,11 @@
-import { Alert, Button, Divider, Flex } from "@mantine/core";
-import { IconChecks } from "@tabler/icons-react";
-import Link from "next/link";
+import { Verified } from "app/features/Auth/Verified";
 import React from "react";
 
-const Verified = () => {
+const VerifiedPage = () => {
   return (
-    <Flex mih="300px" justify="center" align="center">
-      <Alert
-        icon={<IconChecks />}
-        title="Your account has been verified"
-        color="green"
-        w={{ base: "90%", md: "60%" }}
-      >
-        Your Account has been confirmed. You can login
-        <Divider my="lg" />
-        <Button component={Link} href="/login">
-          Login
-        </Button>
-      </Alert>
-    </Flex>
+    <>
+      <Verified />
+    </>
   );
 };
-export default Verified;
+export default VerifiedPage;
