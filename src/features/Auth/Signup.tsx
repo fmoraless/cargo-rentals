@@ -21,6 +21,7 @@ import { useSignupForm } from "app/hooks/useSignupForm";
 import { signupWithEmailPassword } from "app/services/auth.service";
 import { useState } from "react";
 import { EmailConfirmation } from "app/components/EmailConfirmation";
+import { toast } from "react-toastify";
 
 export function Signup() {
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
@@ -34,13 +35,15 @@ export function Signup() {
     const { error } = await signupWithEmailPassword(email, password);
 
     if (error) {
-      console.error(error);
+      toast.error("Error al registrarse", { position: "top-center" });
       setIsSubmitting(true);
     } else {
       setIsSubmitting(false);
       setIsSubmitted(true);
-      /* TODO: continuar ddesde 1: 06 */
-      console.log("Signup successful");
+      toast.success(
+        "Registrado correctamente. Por favor revisa tu correo para verificar tu cuenta.",
+        { position: "top-center" }
+      );
     }
   };
 

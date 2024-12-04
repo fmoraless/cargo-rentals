@@ -8,6 +8,7 @@ import "@mantine/dates/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { Navbar } from "app/components/Navbar";
 import { UserSessionContextProvider } from "app/context/UserSessionContext";
+import { ToastContainer } from "react-toastify";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <UserSessionContextProvider>
             <Navbar />
             {children}
+            <ToastContainer />
           </UserSessionContextProvider>
         </MantineProvider>
       </body>

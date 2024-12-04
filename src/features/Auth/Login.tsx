@@ -23,6 +23,7 @@ import { loginWithEmailPassword } from "app/services/auth.service";
 import { NotRegisteredAlert } from "./NotRegisteredAlert";
 import { NotVerifiedAlert } from "./NotVerifiedAlert";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 const errorMessage = "Invalid login credentials";
 
@@ -52,7 +53,7 @@ export function Login(props: PaperProps) {
       setNotVerified(false);
       push("/");
 
-      console.log("Login successful", data);
+      toast.success("Inicio de sesión exitoso", { position: "top-center" });
     }
   };
 

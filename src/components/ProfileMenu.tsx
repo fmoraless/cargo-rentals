@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { BiLogOutCircle } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { IoCarSportSharp, IoChevronDown } from "react-icons/io5";
+import { toast } from "react-toastify";
 export function ProfileMenu() {
   const [avatar, setAvatar] = useState("");
   const { user } = useUserSessionContext();
@@ -17,6 +18,7 @@ export function ProfileMenu() {
 
   const handleSignOut = async () => {
     await logout();
+    toast.success("Se ha cerrado tu sesión", { position: "top-center" });
   };
 
   //   useEffect(() => {
