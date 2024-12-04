@@ -13,6 +13,7 @@ interface Props {
 }
 
 export const UserSessionContext = createContext<IUserSessionContext>(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   null as any
 );
 

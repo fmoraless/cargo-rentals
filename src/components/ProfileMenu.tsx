@@ -5,13 +5,13 @@ import { Avatar, Flex, Menu, Text, UnstyledButton } from "@mantine/core";
 import { useUserSessionContext } from "app/context/UserSessionContext";
 import { logout } from "app/services/auth.service";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BiLogOutCircle } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { IoCarSportSharp, IoChevronDown } from "react-icons/io5";
 import { toast } from "react-toastify";
 export function ProfileMenu() {
-  const [avatar, setAvatar] = useState("");
+  const [avatar] = useState("");
   const { user } = useUserSessionContext();
   //   const { logOut, user } = useAuthContext();
   //   const supabase = useSupabase();
