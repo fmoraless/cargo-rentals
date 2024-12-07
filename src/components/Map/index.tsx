@@ -6,7 +6,7 @@ import { Container } from "@mantine/core";
 
 const Map = () => {
   return (
-    <Container className={classes.container}>
+    <Container className={classes.container} mb="1rem" size="100%">
       <MapContainer
         className={classes.mapContainer}
         center={[-38.73965, -72.59842]}
