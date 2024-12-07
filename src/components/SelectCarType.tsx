@@ -34,6 +34,7 @@ export const SelectCarType = ({
   label,
   value,
   onChange,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   addAny,
   required,
 }: Props) => {
