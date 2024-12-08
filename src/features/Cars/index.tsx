@@ -5,6 +5,7 @@ import {
   Container,
   Divider,
   Flex,
+  Space,
   Title,
 } from "@mantine/core";
 import classes from "./Styles.module.css";
@@ -13,6 +14,10 @@ import { IconBrandGoogleMaps } from "@tabler/icons-react";
 import dynamic from "next/dynamic";
 import ResetFiltersButton from "./ResetFiltersButton";
 import { BodyType } from "./BodyType";
+import { PriceRange } from "app/components/PriceRange";
+import { YearModel } from "app/components/YearModel";
+import { Transmission } from "app/components/Transmission";
+import { FuelType } from "./FuelType";
 
 const Map = dynamic(() => import("app/components/Map"), {
   ssr: false,
@@ -37,7 +42,7 @@ export const CarsLayout = () => {
       >
         <Card w={{ base: "100%", md: "350px" }}>
           <Flex align="center" justify="space-between">
-            <Title order={4}>Filters</Title>
+            <Title order={4}>Filtros</Title>
 
             <Box display={{ base: "none", md: "inline-block" }}>
               <ResetFiltersButton />
@@ -48,6 +53,11 @@ export const CarsLayout = () => {
 
           <Box display={{ base: "none", md: "block" }}>
             <BodyType />
+            <PriceRange />
+            <YearModel />
+            <Transmission />
+            <Space my="lg" />
+            <FuelType />
           </Box>
         </Card>
         {/* Car list */}
